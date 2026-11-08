@@ -1,0 +1,10 @@
+# Local development and tests: PostgreSQL only, on port 55434.
+services:
+  db:
+    image: postgres:16
+    environment:
+      POSTGRES_DB: app
+      POSTGRES_USER: app
+      POSTGRES_PASSWORD: app
+    ports:
+      - "55434:5432"
